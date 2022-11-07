@@ -17,10 +17,12 @@ git clone https://github.com/inkyblinkypinkyclyde/go-todo-postgres
 ```
 
 
-Then cd into the directory:
+Then cd into the directory, create the database and connect it to the provided schema:
 
 ```bash
 cd go-todo-postgres 
+createdb go-todo
+psql -d go-todo -f db/go-todo.sql
 ```
 
 Then run the app with:
